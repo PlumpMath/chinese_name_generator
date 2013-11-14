@@ -14,7 +14,7 @@ def generate_name():
 	"""Returns a random consonant-vowel-consonant pseudo-word."""
 	names = list(random.choice(s) for s in (family_names, given_names, given_names))
 	name = names[0] + ' ' + names[1]
-	if(bool(random.getrandbits(1)))
+	if(bool(random.getrandbits(1))):
 		name += names[2].lower()
 	return name
 
